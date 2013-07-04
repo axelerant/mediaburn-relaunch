@@ -170,7 +170,8 @@ function mbr_manage_posts_custom_column( $column, $post_id, $echo = true ) {
 			$values				= get_post_meta($post_id, $column, true);
 			// $values				= get_field($column, $post_id);
 			if ( $values ) {
-				$values			= explode( ',', $values );
+				if ( ! is_array( $values ) )
+					$values		= explode( ',', $values );
 				$result			= array();
 				foreach( $values as $key => $value ) {
 					$value		= trim( $value );
