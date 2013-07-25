@@ -411,8 +411,8 @@ function mbr_user_can() {
 	if ( is_admin() ) {
 		global $user;
 
-		if ( user_can( $user->ID, 'administrator' )
-			|| user_can( $user->ID, 'editor' )
+		if ( ( $user && ( user_can( $user->ID, 'administrator' )
+			|| user_can( $user->ID, 'editor' ) ) )
 			|| current_user_can( 'administrator' )
 			|| current_user_can( 'editor' ) ) {
 			require_once( 'meta-document-editor.php' );
@@ -424,7 +424,7 @@ function mbr_user_can() {
 			add_action( 'do_meta_boxes', 'mbr_remove_meta_box' );
 		}
 
-		if ( ! user_can( $user->ID, 'administrator' )
+		if ( ( $user && ! user_can( $user->ID, 'administrator' ) )
 			&& ! current_user_can( 'administrator' ) ) {
 			add_action( 'do_meta_boxes', 'mbr_remove_meta_box_custom_fields' );
 		}
