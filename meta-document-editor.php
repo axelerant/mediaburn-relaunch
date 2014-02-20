@@ -73,7 +73,7 @@ if(function_exists("register_field_group"))
 			4 => 
 			array (
 				'key' => 'field_4f10ba3f6f8b7',
-				'label' => 'Staff Comments',
+				'label' => 'Staff and Producer Comments',
 				'name' => 'staff_comments',
 				'type' => 'textarea',
 				'default_value' => '',

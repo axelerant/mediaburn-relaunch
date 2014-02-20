@@ -51,7 +51,7 @@ if(function_exists("register_field_group"))
 			2 => 
 			array (
 				'key' => 'field_4efcdee53d3a7',
-				'label' => 'Staff Comments',
+				'label' => 'Staff and Producer Comments',
 				'name' => 'staff_comments',
 				'type' => 'textarea',
 				'default_value' => '',

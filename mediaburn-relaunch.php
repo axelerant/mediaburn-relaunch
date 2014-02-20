@@ -84,7 +84,7 @@ function mbr_video_manage_posts_columns( $columns ) {
 	$columns['performers']    = __( 'Performers', 'fitv' );
 	$columns['running_time']    = __( 'Running Time', 'fitv' );
 	// $columns['sound']    = __( 'Sound', 'fitv' );
-	$columns['staff_comments']    = __( 'Staff Comments', 'fitv' );
+	$columns['staff_comments']    = __( 'Staff and Producer Comments', 'fitv' );
 	// $columns['titles_on_reel']    = __( 'Titles on Reel', 'fitv' );
 	// $columns['video_start_point']    = __( 'Video Start Point', 'fitv' );
 	$columns['wpzoom_post_embed_code']    = __( 'Embedded Video', 'fitv' );
@@ -130,7 +130,7 @@ function mbr_document_manage_posts_columns( $columns ) {
 	// $columns['not_for_sale']    = __( 'Not For Sale', 'fitv' );
 	$columns['number_of_pages']    = __( 'Number Of Pages', 'fitv' );
 	$columns['size']    = __( 'Size', 'fitv' );
-	$columns['staff_comments']    = __( 'Staff Comments', 'fitv' );
+	$columns['staff_comments']    = __( 'Staff and Producer Comments', 'fitv' );
 	// $columns['title_list']    = __( 'Title List', 'fitv' );
 
 	return $columns;
